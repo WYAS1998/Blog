@@ -1,0 +1,6 @@
+{
+  "port": 2023,
+  "mongo_host": "localhost:27017",
+  "mongo_db": "Wuyuan",
+  "uploadSizeLimit": 2097152
+}

@@ -1,0 +1,215 @@
+// 引入基础css
+@import 'bytemd/dist/index.min.css';
+// 引入高亮css
+@import 'highlight.js/styles/vs.css';
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.mainHeader {
+  background-color: rgb(214, 233, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .headerTitle {
+    // background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: center;
+    font-size: 24px;
+    // margin: 10px;
+  }
+}
+.antdSider {
+  background-color: rgb(214, 233, 255);
+}
+.userInfoDiv {
+  height: 100%;
+  margin-right: 10px;
+  padding: 20px;
+  //   margin-top: 10px;
+  background-color: white;
+  // border-top-left-radius: 45px;
+  // border-top-right-radius: 45px;
+  .userInfo {
+    //   background-color: yellow;
+    text-align: center;
+    .username {
+      //   padding: 10px;
+      font-size: 24px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+.username {
+  //   padding: 10px;
+  font-size: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.avatarImgDiv {
+  border-radius: 25px;
+  // background-color: yellow;
+}
+// .avatarImg {
+//   width: 90%;
+//   border-radius: 25px;
+// }
+.userNickname {
+  font-size: 18px;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.EditBtnDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent {
+  // background-color: rgb(214, 233, 255);
+  background-color: rgb(240, 242, 245);
+}
+.articleList {
+  margin-left: 10px;
+  // padding: 20px;
+  // border-top-left-radius: 45px;
+  // border-top-right-radius: 45px;
+  // width: 95%;
+  height: 100%;
+  background-color: white;
+}
+.allArticleHeader {
+  text-align: center;
+  font-size: 24px;
+}
+.mainBody {
+  text-align: center;
+  // padding-left: 10px;
+  padding-top: 10px;
+  // padding-right: 10px;
+}
+.allArticleList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.articleItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(214, 233, 255);
+  height: 300px;
+  border-radius: 25px;
+  padding: 10px;
+  // .banner {
+  // height: 140px;
+  // }
+}
+// 单个文章组件的banner图
+// .articleBannerImg {
+//   // height: 200px;
+//   width: 140px;
+// }
+// .bannerEmpty {
+//   height: 100px;
+// }
+// 文章详情页的banner图
+.articleBanner {
+  width: 500px;
+}
+.articleTitle {
+  // width: 140px;
+  // margin-top: 10px;
+  font-size: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.articleSubTitle {
+  // margin-top: 2px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ctimeAndPreview {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.articlePreview {
+  display: flex;
+  align-items: center;
+}
+.pagination {
+  margin-top: 20px;
+}
+.myArticle {
+  text-align: center;
+}
+.detail {
+  padding: 5px;
+  display: flex;
+  .articleDetail {
+    padding: 20px;
+    text-align: center;
+    flex: 5;
+  }
+  .authorDetail {
+    flex: 1;
+    text-align: center;
+    // padding: 5px;
+  }
+}
+.subTitle {
+  display: flex;
+  .empty {
+    flex: 1;
+  }
+  .subTitle {
+    flex: 1;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
+.articleContent {
+  margin-top: 20px;
+}
+.searchAndSort {
+  display: flex;
+}
+.sortBtn {
+  flex: 1;
+  // display: flex;justify-content: space-between;
+}
+.empty {
+  flex: 1;
+}
+.searchInput {
+  flex: 1;
+}

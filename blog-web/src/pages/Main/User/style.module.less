@@ -1,0 +1,106 @@
+// 引入基础css
+@import 'bytemd/dist/index.min.css';
+// 引入高亮css
+@import 'highlight.js/styles/vs.css';
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.mainHeader {
+  background-color: rgb(214, 233, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .headerTitle {
+    // background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: center;
+    font-size: 24px;
+    // margin: 10px;
+  }
+}
+.antdSider {
+  background-color: rgb(214, 233, 255);
+}
+.userInfoDiv {
+  height: 100%;
+  margin-right: 10px;
+  padding: 20px;
+  background-color: white;
+  // border-top-left-radius: 45px;
+  // border-top-right-radius: 45px;
+  .userInfo {
+    //   background-color: yellow;
+    text-align: center;
+    .username {
+      //   padding: 10px;
+      font-size: 24px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+.avatarImgDiv {
+  border-radius: 25px;
+  // background-color: yellow;
+}
+.avatarImg {
+  width: 90%;
+  border-radius: 25px;
+}
+.userNickname {
+  font-size: 18px;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.EditBtnDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.ownerArticle {
+  background-color: white;
+}
+.mainContent {
+  // background-color: rgb(214, 233, 255);
+  // background-color: rgb(240, 242, 245);
+  background-color: white;
+}
+.articleList {
+  // margin-left: 10px;
+  // padding: 20px;
+  // border-top-left-radius: 45px;
+  // border-top-right-radius: 45px;
+  // width: 95%;
+  height: 100%;
+  background-color: rgb(240, 242, 245);
+}
+.editArticle {
+  text-align: center;
+}
+.myArticle {
+  text-align: center;
+}
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.oldImg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
